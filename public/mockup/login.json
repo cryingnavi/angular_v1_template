@@ -1,0 +1,10 @@
+{
+	"header": {
+		"code": 20000
+	},
+	"body": {
+		"token": "asdfav1padklmopdfak40lfg",
+		"username": "a",
+		"isAdmin": false
+	}
+}

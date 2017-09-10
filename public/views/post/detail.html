@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="row">
+		<div class="content-center">
+			<h3>{{vm.item.title}}</h3>
+			<hr/>
+			<div style="float: right;">
+				<span><a href="/#!/user/{{vm.item.author}}">{{vm.item.author}}</a></span> <span>{{vm.item.date}}</span>
+			</div>
+
+			<textarea style="min-height: 300px;width:100%;border:none;" readonly="">{{vm.item.content}}</textarea>
+
+			<div style="float: right;" ng-show="(isLogin && vm.item.author == userData.username) || (isLogin && userData.isAdmin)">
+				<button type="button" class="btn btn-primary btn-lg" ng-click="vm.edit();">수정하기</button>
+				<button type="button" class="btn btn-warning btn-lg" ng-click="vm.delete();">삭제하기</button>
+			</div>
+		</div>
+	</div>
+</div>

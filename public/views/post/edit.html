@@ -1,0 +1,20 @@
+<div class="container">
+	<div class="row">
+		<div class="content-center">
+			<form>
+				<h3>
+					<input type="text" ng-model="vm.item.title" />
+				</h3>
+				<hr/>
+				<div style="float: right;">
+					<span>{{vm.item.author}}</span> <span>{{vm.item.date}}</span>
+				</div>
+
+				<textarea style="min-height: 300px;width:100%;" ng-model="vm.item.content"></textarea>
+				<div style="float: right;">
+					<button type="button" class="btn btn-primary btn-lg" ng-click="vm.edit();">수정하기</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

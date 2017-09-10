@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<access origin="*" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#1b1b1e" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="/css/app.css" />
+
+	<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="/bower_components/angular-messages/angular-messages.min.js"></script>
+	<script type="text/javascript" src="/bower_components/requirejs/require.js"></script>
+	<script type="text/javascript" src="/naver.js"></script>
+</head>
+<body ng-clock>
+	<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+	  <a class="navbar-brand" href="#">NAVER</a>
+
+	  <button ng-click="logout();" ng-show="isLogin">로그아웃</button>
+	</nav>
+	<div ui-view="app-view"></div>
+	<script type="text/javascript" src="/app.module.js"></script>
+</body>
+</html>

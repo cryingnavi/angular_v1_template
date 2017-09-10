@@ -1,0 +1,41 @@
+<div class="container">
+	<div class="row">
+		<div class="main-login main-center">
+			<form class="form-horizontal" name="loginForm">
+				<div class="form-group">
+					<label for="name" class="cols-sm-2 control-label">Your ID</label>
+					<div class="cols-sm-10">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+							<input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name" ng-model="vm.username" required="" />
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="pwd" class="cols-sm-2 control-label">Your Password</label>
+					<div class="cols-sm-10">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+							<input type="text" class="form-control" name="pwd" id="pwd"  placeholder="Enter your Password" ng-model="vm.pwd" required=""/>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<button type="button" class="btn btn-primary btn-lg btn-block" ng-click="vm.login();" ng-disabled="loginForm.$invalid">Login in</button>
+				</div>
+
+				<div class="form-group">
+					<strong>아래 세개의 계정만 로그인이 됩니다.</strong>
+					<p>(비밀 번호는 아무거나 입력할 수 있습니다.)</p>
+					<ul>
+						<li>super - 관리자 계정입니다.</li>
+						<li>user1 - 일반 계정입니다.</li>
+						<li>user2 - 일반 계정입니다.</li>
+					</ul>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
